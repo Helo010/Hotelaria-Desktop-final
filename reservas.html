@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BellaVista Hotel | Reservas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<aside class="sidebar">
+    <div class="brand">
+        <div class="logo">BV</div>
+        <div><h2>BellaVista</h2><span>HOTEL</span></div>
+    </div>
+
+    <div class="menu-title">MENU PRINCIPAL</div>
+    <nav>
+        <a href="index.html">▦ Início</a>
+        <a href="reservas.html" class="active">▤ Reservas</a>
+        <a href="checkin.html">↪ Check-in</a>
+        <a href="checkout.html">↩ Check-out</a>
+        <a href="consumo.html">♧ Consumo</a>
+        <a href="cancelamentos.html">✕ Cancelamentos</a>
+    </nav>
+
+    <div class="sidebar-bottom">
+        <div class="employee">
+            <div class="avatar">RF</div>
+            <div><strong>Recepcionista</strong><small>Funcionário</small></div>
+        </div>
+    </div>
+</aside>
+
+<main class="main">
+
+    <header class="topbar">
+        <div>
+            <span class="breadcrumb">BellaVista / Reservas</span>
+            <h1>Gerenciamento de Reservas</h1>
+            <p>Cadastre e consulte as reservas de hospedagem.</p>
+        </div>
+    </header>
+
+    <section class="stats">
+        <div class="stat-card">
+            <span>Reservas confirmadas</span>
+            <h2>12</h2>
+            <small>Reservas registradas</small>
+        </div>
+        <div class="stat-card">
+            <span>Chegadas hoje</span>
+            <h2>04</h2>
+            <small>Hóspedes previstos</small>
+        </div>
+        <div class="stat-card">
+            <span>Próximas reservas</span>
+            <h2>08</h2>
+            <small>Agendadas</small>
+        </div>
+        <div class="stat-card">
+            <span>Canceladas</span>
+            <h2>02</h2>
+            <small>Reservas canceladas</small>
+        </div>
+    </section>
+
+    <section class="panel form-panel">
+        <div class="panel-header">
+            <div>
+                <h3>Nova reserva</h3>
+                <p>Preencha os dados para registrar uma hospedagem.</p>
+            </div>
+            <span class="total-rooms">CADASTRO</span>
+        </div>
+
+        <form action="confirmacao.html">
+            <div class="form-grid">
+                <div class="field full">
+                    <label>Nome completo do hóspede</label>
+                    <input type="text" placeholder="Digite o nome do hóspede" required>
+                </div>
+
+                <div class="field">
+                    <label>CPF</label>
+                    <input type="text" placeholder="000.000.000-00">
+                </div>
+
+                <div class="field">
+                    <label>Telefone</label>
+                    <input type="tel" placeholder="(00) 00000-0000">
+                </div>
+
+                <div class="field">
+                    <label>Data de check-in</label>
+                    <input type="date" required>
+                </div>
+
+                <div class="field">
+                    <label>Data de check-out</label>
+                    <input type="date" required>
+                </div>
+
+                <div class="field">
+                    <label>Categoria do quarto</label>
+                    <select required>
+                        <option value="">Selecione a categoria</option>
+                        <option>Standard</option>
+                        <option>Luxo</option>
+                        <option>Suíte</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label>Quantidade de hóspedes</label>
+                    <select>
+                        <option>1 hóspede</option>
+                        <option>2 hóspedes</option>
+                        <option>3 hóspedes</option>
+                        <option>4 hóspedes</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="form-actions">
+                <button type="reset" class="btn-secondary">Limpar</button>
+                <button type="submit" class="btn-primary">Confirmar reserva</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="panel recent-panel">
+        <div class="panel-header">
+            <div>
+                <h3>Reservas cadastradas</h3>
+                <p>Consulta das hospedagens registradas</p>
+            </div>
+        </div>
+
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>HÓSPEDE</th>
+                        <th>QUARTO</th>
+                        <th>CHECK-IN</th>
+                        <th>CHECK-OUT</th>
+                        <th>STATUS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Mariana Oliveira</strong></td>
+                        <td>104</td>
+                        <td>13/11/2026</td>
+                        <td>16/11/2026</td>
+                        <td><span class="badge reserved">Confirmada</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Lucas Ferreira</strong></td>
+                        <td>110</td>
+                        <td>14/11/2026</td>
+                        <td>17/11/2026</td>
+                        <td><span class="badge reserved">Confirmada</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ana Martins</strong></td>
+                        <td>113</td>
+                        <td>15/11/2026</td>
+                        <td>18/11/2026</td>
+                        <td><span class="badge pending">Pendente</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer>
+        <span>BellaVista Hotel © 2026</span>
+        <span>Sistema de Gerenciamento Hoteleiro</span>
+    </footer>
+
+</main>
+</body>
+</html>

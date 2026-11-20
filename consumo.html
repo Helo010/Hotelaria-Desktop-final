@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BellaVista Hotel | Consumo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<aside class="sidebar">
+    <div class="brand">
+        <div class="logo">BV</div>
+        <div><h2>BellaVista</h2><span>HOTEL</span></div>
+    </div>
+    <div class="menu-title">MENU PRINCIPAL</div>
+    <nav>
+        <a href="index.html">▦ Início</a>
+        <a href="reservas.html">▤ Reservas</a>
+        <a href="checkin.html">↪ Check-in</a>
+        <a href="checkout.html">↩ Check-out</a>
+        <a href="consumo.html" class="active">♧ Consumo</a>
+        <a href="cancelamentos.html">✕ Cancelamentos</a>
+    </nav>
+    <div class="sidebar-bottom">
+        <div class="employee">
+            <div class="avatar">RF</div>
+            <div><strong>Recepcionista</strong><small>Funcionário</small></div>
+        </div>
+    </div>
+</aside>
+
+<main class="main">
+
+    <header class="topbar">
+        <div>
+            <span class="breadcrumb">BellaVista / Consumo</span>
+            <h1>Registro de Consumo</h1>
+            <p>Registre bebidas consumidas e vincule à conta do quarto.</p>
+        </div>
+    </header>
+
+    <section class="stats">
+        <div class="stat-card">
+            <span>Consumos registrados</span>
+            <h2>18</h2>
+            <small>Lançamentos</small>
+        </div>
+        <div class="stat-card">
+            <span>Quartos com consumo</span>
+            <h2>05</h2>
+            <small>Hospedagens ativas</small>
+        </div>
+        <div class="stat-card">
+            <span>Total de consumo</span>
+            <h2>R$ 425</h2>
+            <small>Valores registrados</small>
+        </div>
+        <div class="stat-card">
+            <span>Último lançamento</span>
+            <h2>11:30</h2>
+            <small>Hoje</small>
+        </div>
+    </section>
+
+    <section class="panel form-panel">
+        <div class="panel-header">
+            <div>
+                <h3>Novo lançamento</h3>
+                <p>Informe o quarto e os itens consumidos.</p>
+            </div>
+            <span class="total-rooms">CONSUMO</span>
+        </div>
+
+        <form>
+            <div class="form-grid">
+                <div class="field">
+                    <label>Número do quarto</label>
+                    <select required>
+                        <option value="">Selecione o quarto</option>
+                        <option>102</option>
+                        <option>105</option>
+                        <option>108</option>
+                        <option>111</option>
+                        <option>115</option>
+                        <option>118</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label>Hóspede</label>
+                    <select>
+                        <option value="">Selecione o hóspede</option>
+                        <option>Lucas Ferreira</option>
+                        <option>Mariana Oliveira</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label>Produto</label>
+                    <select>
+                        <option value="">Selecione a bebida</option>
+                        <option>Água mineral - R$ 5,00</option>
+                        <option>Refrigerante - R$ 8,00</option>
+                        <option>Suco - R$ 10,00</option>
+                        <option>Cerveja - R$ 15,00</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label>Quantidade</label>
+                    <input type="number" min="1" value="1">
+                </div>
+
+                <div class="field">
+                    <label>Data do consumo</label>
+                    <input type="date">
+                </div>
+
+                <div class="field">
+                    <label>Observações</label>
+                    <input type="text" placeholder="Informações adicionais">
+                </div>
+            </div>
+
+            <div class="form-actions">
+                <button type="reset" class="btn-secondary">Limpar</button>
+                <button type="button" class="btn-primary">Registrar consumo</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="panel recent-panel">
+        <div class="panel-header">
+            <div>
+                <h3>Consumos recentes</h3>
+                <p>Histórico ilustrativo de lançamentos.</p>
+            </div>
+        </div>
+
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>QUARTO</th>
+                        <th>HÓSPEDE</th>
+                        <th>PRODUTO</th>
+                        <th>QUANTIDADE</th>
+                        <th>VALOR</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>102</td>
+                        <td><strong>Lucas Ferreira</strong></td>
+                        <td>Água mineral</td>
+                        <td>2</td>
+                        <td>R$ 10,00</td>
+                    </tr>
+                    <tr>
+                        <td>105</td>
+                        <td><strong>Mariana Oliveira</strong></td>
+                        <td>Refrigerante</td>
+                        <td>1</td>
+                        <td>R$ 8,00</td>
+                    </tr>
+                    <tr>
+                        <td>111</td>
+                        <td><strong>Pedro Santos</strong></td>
+                        <td>Suco</td>
+                        <td>2</td>
+                        <td>R$ 20,00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer>
+        <span>BellaVista Hotel © 2026</span>
+        <span>Sistema de Gerenciamento Hoteleiro</span>
+    </footer>
+
+</main>
+</body>
+</html>

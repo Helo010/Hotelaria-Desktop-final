@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BellaVista Hotel | Cancelamentos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<aside class="sidebar">
+    <div class="brand">
+        <div class="logo">BV</div>
+        <div><h2>BellaVista</h2><span>HOTEL</span></div>
+    </div>
+    <div class="menu-title">MENU PRINCIPAL</div>
+    <nav>
+        <a href="index.html">▦ Início</a>
+        <a href="reservas.html">▤ Reservas</a>
+        <a href="checkin.html">↪ Check-in</a>
+        <a href="checkout.html">↩ Check-out</a>
+        <a href="consumo.html">♧ Consumo</a>
+        <a href="cancelamentos.html" class="active">✕ Cancelamentos</a>
+    </nav>
+    <div class="sidebar-bottom">
+        <div class="employee">
+            <div class="avatar">RF</div>
+            <div><strong>Recepcionista</strong><small>Funcionário</small></div>
+        </div>
+    </div>
+</aside>
+
+<main class="main">
+
+    <header class="topbar">
+        <div>
+            <span class="breadcrumb">BellaVista / Cancelamentos</span>
+            <h1>Cancelamento de Reservas</h1>
+            <p>Consulte reservas e visualize a confirmação de cancelamento.</p>
+        </div>
+    </header>
+
+    <section class="welcome">
+        <div>
+            <span class="welcome-label">GERENCIAMENTO</span>
+            <h2>Cancelamento seguro.</h2>
+            <p>Confira os dados antes de cancelar uma reserva.</p>
+        </div>
+        <div class="welcome-icon">✕</div>
+    </section>
+
+    <section class="panel form-panel">
+        <div class="panel-header">
+            <div>
+                <h3>Consultar reserva</h3>
+                <p>Selecione a hospedagem que deseja consultar.</p>
+            </div>
+            <span class="total-rooms">CONSULTA</span>
+        </div>
+
+        <form>
+            <div class="form-grid">
+                <div class="field full">
+                    <label>Reserva</label>
+                    <select required>
+                        <option value="">Selecione a reserva</option>
+                        <option>001 - Mariana Oliveira</option>
+                        <option>002 - Lucas Ferreira</option>
+                        <option>003 - Ana Martins</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label>Nome do hóspede</label>
+                    <input type="text" placeholder="Nome do hóspede">
+                </div>
+
+                <div class="field">
+                    <label>Data da reserva</label>
+                    <input type="date">
+                </div>
+            </div>
+
+            <div class="form-actions">
+                <button type="reset" class="btn-secondary">Limpar</button>
+                <button type="button" class="btn-primary">Consultar reserva</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="panel recent-panel">
+        <div class="panel-header">
+            <div>
+                <h3>Reservas disponíveis para cancelamento</h3>
+                <p>Reservas confirmadas ainda não iniciadas.</p>
+            </div>
+        </div>
+
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>CÓDIGO</th>
+                        <th>HÓSPEDE</th>
+                        <th>CHECK-IN</th>
+                        <th>CHECK-OUT</th>
+                        <th>STATUS</th>
+                        <th>AÇÃO</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td><strong>Mariana Oliveira</strong></td>
+                        <td>13/11/2026</td>
+                        <td>16/11/2026</td>
+                        <td><span class="badge reserved">Confirmada</span></td>
+                        <td><button type="button" class="btn-danger">Cancelar</button></td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td><strong>Lucas Ferreira</strong></td>
+                        <td>14/11/2026</td>
+                        <td>17/11/2026</td>
+                        <td><span class="badge reserved">Confirmada</span></td>
+                        <td><button type="button" class="btn-danger">Cancelar</button></td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <td><strong>Ana Martins</strong></td>
+                        <td>15/11/2026</td>
+                        <td>18/11/2026</td>
+                        <td><span class="badge pending">Pendente</span></td>
+                        <td><button type="button" class="btn-danger">Cancelar</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="panel">
+        <div class="panel-header">
+            <div>
+                <h3>Procedimento de cancelamento</h3>
+                <p>Cuidados para evitar cancelamentos indevidos.</p>
+            </div>
+        </div>
+
+        <div class="info-list">
+            <div>✓ <span>Confirmar a identificação da reserva.</span></div>
+            <div>✓ <span>Verificar o status da hospedagem.</span></div>
+            <div>✓ <span>Solicitar confirmação antes do cancelamento.</span></div>
+            <div>✓ <span>Informar claramente o resultado da operação.</span></div>
+        </div>
+    </section>
+
+    <footer>
+        <span>BellaVista Hotel © 2026</span>
+        <span>Sistema de Gerenciamento Hoteleiro</span>
+    </footer>
+
+</main>
+</body>
+</html>

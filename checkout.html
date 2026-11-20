@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BellaVista Hotel | Check-out</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<aside class="sidebar">
+    <div class="brand">
+        <div class="logo">BV</div>
+        <div><h2>BellaVista</h2><span>HOTEL</span></div>
+    </div>
+    <div class="menu-title">MENU PRINCIPAL</div>
+    <nav>
+        <a href="index.html">▦ Início</a>
+        <a href="reservas.html">▤ Reservas</a>
+        <a href="checkin.html">↪ Check-in</a>
+        <a href="checkout.html" class="active">↩ Check-out</a>
+        <a href="consumo.html">♧ Consumo</a>
+        <a href="cancelamentos.html">✕ Cancelamentos</a>
+    </nav>
+    <div class="sidebar-bottom">
+        <div class="employee">
+            <div class="avatar">RF</div>
+            <div><strong>Recepcionista</strong><small>Funcionário</small></div>
+        </div>
+    </div>
+</aside>
+
+<main class="main">
+
+    <header class="topbar">
+        <div>
+            <span class="breadcrumb">BellaVista / Check-out</span>
+            <h1>Saída de Hóspedes</h1>
+            <p>Finalize a hospedagem e confira as despesas.</p>
+        </div>
+    </header>
+
+    <section class="welcome">
+        <div>
+            <span class="welcome-label">FINALIZAÇÃO</span>
+            <h2>Obrigado por escolher o BellaVista.</h2>
+            <p>Confira os valores antes de concluir o check-out.</p>
+        </div>
+        <div class="welcome-icon">↩</div>
+    </section>
+
+    <section class="panel form-panel">
+        <div class="panel-header">
+            <div>
+                <h3>Identificação da hospedagem</h3>
+                <p>Selecione o hóspede para consultar a conta.</p>
+            </div>
+            <span class="total-rooms">SAÍDA</span>
+        </div>
+
+        <form action="checkout-concluido.html">
+            <div class="form-grid">
+                <div class="field full">
+                    <label>Hóspede</label>
+                    <select>
+                        <option value="">Selecione o hóspede</option>
+                        <option>Mariana Oliveira</option>
+                        <option>Lucas Ferreira</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label>Número do quarto</label>
+                    <select>
+                        <option value="">Selecione o quarto</option>
+                        <option>102</option>
+                        <option>105</option>
+                        <option>108</option>
+                        <option>111</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label>Data de check-out</label>
+                    <input type="date">
+                </div>
+            </div>
+
+            <div class="form-actions">
+                <a href="index.html" class="btn-secondary">Voltar</a>
+                <button type="submit" class="btn-primary">Finalizar check-out</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="panel recent-panel">
+        <div class="panel-header">
+            <div>
+                <h3>Resumo da conta</h3>
+                <p>Consolidação das despesas da hospedagem.</p>
+            </div>
+            <span class="total-rooms">CONFERÊNCIA</span>
+        </div>
+
+        <div class="bill">
+            <div class="bill-row">
+                <span>Diárias de hospedagem</span>
+                <strong>R$ 750,00</strong>
+            </div>
+            <div class="bill-row">
+                <span>Consumo de bebidas</span>
+                <strong>R$ 85,00</strong>
+            </div>
+            <div class="bill-row">
+                <span>Serviços adicionais</span>
+                <strong>R$ 0,00</strong>
+            </div>
+            <div class="bill-total">
+                <span>Total da hospedagem</span>
+                <strong>R$ 835,00</strong>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="panel">
+        <div class="info-list">
+            <div>✓ <span>Conferir despesas e consumo.</span></div>
+            <div>✓ <span>Confirmar o encerramento da hospedagem.</span></div>
+            <div>✓ <span>Realizar a liberação do quarto.</span></div>
+        </div>
+    </section>
+
+    <footer>
+        <span>BellaVista Hotel © 2026</span>
+        <span>Sistema de Gerenciamento Hoteleiro</span>
+    </footer>
+
+</main>
+</body>
+</html>
